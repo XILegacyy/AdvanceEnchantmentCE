@@ -1,0 +1,463 @@
+Effect examples
+Copy
+effects:
+- 'BURN:40'
+- 'MESSAGE:<random word>Hello,Hi,Greetings</random word> %victim name%!'
+In this example, when the trigger occurs, the victim will be set on fire for 2 seconds, a random greeting will be sent to the victim with their name.
+
+
+Sponsored by MintServers. AdvancedPlugins.net integration & auto updates. Unlimited RAM plan for only $9.99!
+Effect List
+There are many different types of effects that can be used in our ability system. Some of the effects available are:
+
+Usage
+Description
+ACTION_BAR:<TEXT>
+
+Send an actionbar message
+
+ADD_DURABILITY_CURRENT_ITEM:<AMOUNT>
+
+Modify durability of main item
+
+ADD_DURABILITY_ARMOR:<AMOUNT>
+
+Modify durability of armor
+
+ADD_DURABILITY_ITEM:<SLOT>:<AMOUNT>
+
+Repair item
+
+ADD_FLY_SPEED
+
+Adds to the player's fly speed (from -1 to 1)
+
+ADD_FOOD:<AMOUNT>
+
+Modify player's food level
+
+ADD_HEALTH:<HEALTH>
+
+Add health to entity
+
+ADD_MONEY:<AMOUNT>
+
+Add money to player account
+
+ADD_WALK_SPEED
+
+Adds to the player's walk speed (from -1 to 1)
+
+AIR:<AMOUNT>
+
+Modify player's remaining air
+
+AUTO_REEL
+
+Auto reel in fish from fishing rod (for BITE_HOOK trigger only)
+
+BLEED:<DAMAGE>:<TICKS>:<INTERVAL_TICKS>
+
+Steal entity bleed
+
+BLOOD
+
+Display blood effect
+
+BOOST:[DIRECTION]:[AMOUNT]
+
+Boost entity up in air
+
+BREAK_BLOCK
+
+Break block
+
+BREAK_TREE:[MAX_LOGS]:[MAX_LEAVES]
+
+Break a whole tree at once
+
+BURN:<SECONDS>
+
+Set an entity on fire
+
+CACTUS
+
+Display cactus effect
+
+CANCEL_EVENT
+
+Cancel Event, e.g. an attack
+
+CANCEL_USE:<MATERIAL>:<TICKS>
+
+Cancel use of a material, e.g. ENDER_PEARL
+
+CONSOLE_COMMAND:<COMMAND>
+
+Run command through console
+
+CURE:<POTION>
+
+Remove non-permanent potion effect
+
+CURE_PERMANENT:<POTION>
+
+Remove permanent potion effect
+
+DAMAGE_ARMOR
+
+Removed. Use ADD_DURABILITY_ARMOR effect
+
+DECREASE_DAMAGE:<AMOUNT>
+
+Decrease damage by percentage
+
+DISABLE_ACTIVATION:<NAME>:<SECONDS>
+
+Disable activation for seconds
+
+DISABLE_KNOCKBACK:<TICKS>
+
+Disable entity's knockback for time
+
+DISARM
+
+Disarm Entity
+
+DO_HARM:<HEALTH>
+
+Harm an entity by doing health damage. This does not ignore armor and dealt damage may be reduced depending on armor
+
+REMOVE_HEALTH:<HEALTH>
+
+Take entity's health away, ignores armor and does not play damage animation for player
+
+REMOVE_HEALTH_DAMAGE:<HEALTH>
+
+Take entity's health away, ignore armor play damage animation for player
+
+REMOVE_HEALTH_TOTEM
+
+Remove health from an entity while allowing the use of totem, "%e:<HEALTH>"
+
+REMOVE_HEALTH_DAMAGE_TOTEM
+
+Remove health from an entity with damage effect while allowing the use of totem, "%e:<HEALTH>"
+
+DOUBLE_DAMAGE
+
+Double damage
+
+DROP_HEAD
+
+Drop player or mob head
+
+EXP:<AMOUNT>
+
+Drop Experience Orbs
+
+EXPLODE:<POWER>:<FIRE (true/false)>:<BREAK BLOCKS (true/false>
+
+Create an explosion
+
+EXTINGUISH
+
+Extinguish an entity
+
+FIREBALL
+
+Shoot a fireball
+
+FIREWORK:[COLOR]:[FADE_COLOR]:[TYPE]:[POWER]:[TRAIL]:[FLICKER]
+
+Spawns a firework. Examples:
+- FIREWORK:RED:ORANGE:BALL:1:true:true
+- FIREWORK:255,0,255:0,255,0:BURST:3:false:true
+
+FLY:[TICKS]
+
+Toggle player's flight
+
+FLY_SPEED:<SPEED>
+
+Sets the player's fly speed (from -1 to 1)
+
+FREEZE:<TICKS>
+
+Freeze Entity
+
+GUARD:<ENTITY>:<SECONDS>:<AMOUNT>:<NAME>
+
+Spawn a guard to protect an entity. Use baby version of supported mobs by adding BABY_ prefix to the type, e.g. BABY_ZOMBIE
+
+GIVE_ITEM:<MATERIAL>:[AMOUNT]
+
+Give items to user/location
+
+HALF_DAMAGE
+
+Half damage effect
+
+IGNORE_ARMOR_DAMAGE
+
+Cancel armor durability reduction
+
+IGNORE_ARMOR_PROTECTION
+
+Ignores armor damage reduction
+
+INCREASE_DAMAGE:<AMOUNT>
+
+Increase damage by percentage
+
+INVINCIBLE
+
+Toggle entity's invincibility
+
+KILL
+
+Kill an entity
+
+KEEP_ON_DEATH
+
+Keep item on death
+
+LIGHTNING:[BOOLEAN]
+
+Strike a lightning. Optional argument if true, will cause block damage and harm players around, if false, will only play a visual lightning effect. Default is true.
+
+MESSAGE:<TEXT>
+
+Send a message
+
+MORE_DROPS:<AMOUNT>
+
+Multiply drops. We recommend that you set a whitelist for materials, otherwhise this will multiply all drops (e.g. diamond_block) Settings
+
+NEGATE_DAMAGE:<AMOUNT>
+
+Negate a specified amount of damage
+
+PARTICLE:<PARTICLE>:<AMOUNT>:<OFFSET>
+
+Play particles at a location ParticleEffectTypes
+
+PARTICLE_LINE:<PARTICLE>:<AMOUNT>:<POINTS>
+
+Play particles in straight line. Amount = number of particles in each point, Points = number of points between two locations that particles will be shown at.
+
+PERMISSION:<TEXT>
+
+Toggle player's permission
+
+PLANT_SEEDS:<RADIUS>:<SEEDS>
+
+Plant seeds in radius. Seed types: SEEDS, POTATO, MELON, PUMPKIN, CARROT, BEETROOT, NETHER_WART
+
+PLAYER_COMMAND:<COMMAND>
+
+Run command through player
+
+PLAY_SOUND:<SOUND>:[PITCH]:[VOLUME]
+
+Play sound for a specific player
+
+PLAY_SOUND_OUTLOUD:<SOUND>:[PITCH]:[VOLUME]
+
+Play sound at a location
+
+POTION:<POTION>:<LEVEL>:[TICKS]
+
+Add potion effect PotionEffectTypes
+
+POTION_OVERRIDE:<POTION>:<LEVEL>:[TICKS]
+
+Force-add potion effect
+
+PULL_AWAY:<DISTANCE>
+
+Pull away an entity
+
+PULL_CLOSER:<AMOUNT>
+
+Pull an entity closer
+
+PUMPKIN:<TICKS>
+
+Put a pumpkin on entity's head
+
+REMOVE_ARMOR:<ARMOR TYPE>
+
+Remove a specific armor piece
+
+REMOVE_RANDOM_ARMOR
+
+Remove a random armor piece
+
+REMOVE_MONEY:<AMOUNT>
+
+Remove money from player account
+
+REPAIR
+
+Repair item
+
+REVIVE
+
+Revive an entity
+
+SET_AIR:<AMOUNT>
+
+Set player's remaining air
+
+SET_BLOCK:<MATERIAL>
+
+Set block to a type
+
+SET_MAX_CATCH_TIME:<TICKS>
+
+Set max. Time for fishing
+
+SET_MIN_CATCH_TIME:<TICKS>
+
+Set min. Time for fishing
+
+SHUFFLE_HOTBAR
+
+Shuffle player's hotbar
+
+SMELT
+
+Smelt drops
+
+SNOWBLIND
+
+Cancel Event, e.g. an attack
+
+SPAWN_ARROWS
+
+Spawn flood of arrows from above
+
+SPAWN_BLOCKS:<MATERIAL>:<DAMAGE>
+
+Spawn falling blocks from above player and to cause damage
+
+STEAL_EXP:<AMOUNT>
+
+Steal EXP from one person for another
+
+STEAL_HEALTH:<HEALTH>
+
+Steal health from one entity for another
+
+STEAL_MONEY:<AMOUNT>
+
+Steal Money from one person for another
+
+STOP_KNOCKBACK
+
+Stop entity's knockback
+
+SUBTITLE:<TEXT>
+
+Send a subtitle
+
+TAKE_AWAY:<MATERIAL>:<AMOUNT>
+
+Take item away from player
+
+TELEPORT_BEHIND
+
+Teleport behind other entity
+
+TELEPORT
+
+Teleport to location
+
+TITLE:<TEXT>
+
+Send a title
+
+TNT:[DAMAGE]:[RADIUS]
+
+Create a TNT explosion
+
+TP_DROPS
+
+Teleport drops to inventory
+
+DELETE_ITEM:[amount]
+
+Delete x amount of current item from inventory
+
+SPAWN_ENTITY:<TYPE>
+
+Spawn an entity at a location (req. EntityType)
+
+PROJECTILE:<TYPE>
+
+Spawn a shooting projectile with velocity (req. EntityType Projectile)
+
+WEB_WALKER
+
+Walk fast through cobwebs
+
+LAVA_WALKER
+
+Walk on lava
+
+WATER_WALKER
+
+Walk on water
+
+WALK_SPEED:<SPEED>
+
+Sets the player's fly speed (from -1 to 1)
+
+OPEN_CRAFTING_TABLE
+
+Open a virtual crafting table
+
+OPEN_ENDERCHEST
+
+Open virtual enderchest
+
+DROP_HELD_ITEM
+
+Drop item in hand
+
+INVERT_VARIABLE:<NAME>
+
+Invert a custom variable's boolean.
+
+SET_VARIABLE:<NAME><VALUE>
+
+Create a custom variable globally, not per user. To create a variable that could be user for a user, you can include user's name in the variable's name, e.g. customVar%attacker name%. Read more here.
+
+SCREEN_FREEZE:<ticks>
+
+Slow player down and show freeze effect on player's screen for defined amount of ticks (1 second = 20 ticks!)
+
+WAIT:<ticks>
+
+Wait for the next effect to activate.
+
+Plugin-specific effects
+AdvancedEnchantments:
+Usage
+Description
+ADD_ENCHANT:<ENCHANT>:<LVL>
+
+Add an enchant to item
+
+REMOVE_ENCHANT:<ENCHANT>
+
+Remove enchant from item
+
+ADD_SOULS:<amount>
+
+Add souls to an item
+
+REMOVE_SOULS:<amount>
+
+Remove souls from an item
